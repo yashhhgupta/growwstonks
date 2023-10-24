@@ -38,12 +38,12 @@ const Search = () => {
         { search.length>0 && arr &&
         <div className={styles.box}>
         {   
-            arr.map((item : SearchedData)=>{
+            arr.map((item : SearchedData,index)=>{
                 const name = item["2. name"]
                 const ticker = item["1. symbol"]
                 return(
                     
-                        <div className={styles.item}>
+                        <div className={styles.item} key={index}>
                         {name} {ticker}
                         </div>
                 
