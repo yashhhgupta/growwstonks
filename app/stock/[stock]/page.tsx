@@ -100,9 +100,9 @@ export default async function StockPage({ searchParams }: {
         </div>
         <div className={styles.footer}>
           {
-            tempData.map((item) => {
+            tempData.map((item,index) => {
               return (
-                <div>
+                <div key={index}>
                   <div className={styles.priceTitle}>{item.title}</div>
                   <div className={styles.priceValue}>{item.value}</div>
                   </div>

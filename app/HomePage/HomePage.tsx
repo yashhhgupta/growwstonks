@@ -56,7 +56,7 @@ const HomePage = () => {
                   ticker : stock.ticker,
                   image:logolist[index],
                 }
-              }}>
+              }} key={index}>
                 <StockCard key={index} stock={stock} option={option} image={logolist[index]}/>
               </Link>
             )
@@ -76,7 +76,7 @@ const HomePage = () => {
                   price: stock.price,
                   percentage: stock.change_percentage
                 }
-              }}>
+              }} key={index}>
                 <StockCard key={index} stock={stock} option={option} image={logolist[index]}/>
             </Link>
 
