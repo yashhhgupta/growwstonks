@@ -39,8 +39,10 @@ GrowwStonks is a web application where users can track the performance of stocks
 - React Icons
 
 ## Screenshots
-<!-- ![Screenshot 1](output/home.jpg)
-![Screenshot 2](output/board.jpg) -->
+![Screenshot 1](output/1.jpg)
+![Screenshot 2](output/2.jpg)
+![Screenshot 1](output/3.jpg)
+![Screenshot 2](output/4.jpg)
 
 ## Deployment
 - Link : https://digital-wall-rtzw.onrender.com
