@@ -1,0 +1,31 @@
+.container{
+    padding: 0 15%;
+}
+.stocksContainer {
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.selector{
+    display: flex;
+    gap:10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #7c7876;
+}
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ded3ce;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px #ded3ce;
+    margin: 0 15%;
+    padding: 10% 15%;
+    font-size: 15px;
+    font-weight: 600;
+}

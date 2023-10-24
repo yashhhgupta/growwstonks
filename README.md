@@ -1,34 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# GROWWWSTONKS
+Frontend Assignment
 
-First, run the development server:
+## Introduction
+GrowwStonks is a web application where users can track the performance of stocks.It all shows the top 20 Gainers and Losers stocks.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Features
+- Users can view top Gainers and Losers
+- Users can search for any stock in the search bar
+- User can view detaied information of each stock
+- User can track the performance of each stock using Line graph.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## NOTE
+- The API which i am using has following limits: 5 REQUEST PER MINUTE AND 100 REQUEST PER DAY.
+- So there might be some case where the number of request have reached maximum that's why the data must be not loading, In that case kindly retry in some time, or add the api key env in .env.local folder as "API_KEY" variable and run in local.
+- Logo Images was not provided in the API , so I have used some sample images.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Points Implemented
+- Used API from https://www.alphavantage.co/ to show data of stocks.
+- Handled Error and Empty for cases
+- Followed well defined folder structure
+- Deployed the code on render
+- Used React Google Charts for Charts UI
+- Cached API response wherever necessary
+- Implemented Debouncing on Search to limit number of API request
+- Implemented server side rendering wherever possible
 
-## Learn More
+## How to use
+`npm install`
+<br>
+`npm run dev`
 
-To learn more about Next.js, take a look at the following resources:
+## Dependencies
+- NextJS framework
+- React Library
+- React Google Charts for Charts UI
+- React Icons
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Screenshots
+<!-- ![Screenshot 1](output/home.jpg)
+![Screenshot 2](output/board.jpg) -->
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Deployment
+- Link : https://digital-wall-rtzw.onrender.com
+- Deployed on Render
