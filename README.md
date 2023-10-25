@@ -21,11 +21,12 @@ GrowwStonks is a web application where users can track the performance of stocks
 - Used API from https://www.alphavantage.co/ to show data of stocks.
 - Handled Error and Empty for cases
 - Followed well defined folder structure
-- Deployed the code on render
+- Deployed the code on vercel
 - Used React Google Charts for Charts UI
 - Cached API response wherever necessary
 - Implemented Debouncing on Search to limit number of API request
 - Implemented server side rendering wherever possible
+- Created a responsive UI
 
 ## How to use
 `npm install`
@@ -45,5 +46,5 @@ GrowwStonks is a web application where users can track the performance of stocks
 ![Screenshot 2](output/4.jpg)
 
 ## Deployment
-- Link : https://digital-wall-rtzw.onrender.com
-- Deployed on Render
+- Link : https://growwstonks-2qp9-yashhhgupta.vercel.app/
+- Deployed on Vercel

@@ -14,8 +14,8 @@ const Search = () => {
     const [search,setSearch] = React.useState<string>("")
     const debouncedSearch = useDebounce(search, 500);
     const loadStockData = async () => {
-    // const res = await fetch("https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords="+`${search}`+"&apikey="+`${env}`)
-    const res = await fetch("https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=tesco&apikey=demo")
+    const res = await fetch("https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords="+`${search}`+"&apikey="+`${env}`)
+    // const res = await fetch("https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=tesco&apikey=demo")
     const data = await res.json()
     setArr(data.bestMatches);
     }
